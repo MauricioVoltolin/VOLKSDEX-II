@@ -1,0 +1,43 @@
+﻿@{
+    ViewData["Title"] = "Volksdex";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model List<volksdex.Models.Carro>
+
+<h2>Volksdex</h2>
+
+<div class="card-grid">
+@foreach (var carro in Model)
+{
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="/images/@carro.ImagemUrl" alt="@carro.NomeModelo" />
+                <h5>@carro.NomeModelo</h5>
+            </div>
+            <div class="flip-card-back">
+                <p><strong>Ano:</strong> @carro.AnoLancamento</p>
+                @if (carro.AnoDescontinuado != null)
+                {
+                    <p><strong>Descontinuado:</strong> @carro.AnoDescontinuado</p>
+                }
+                <p><strong>Tipo:</strong> @carro.Tipo</p>
+                <p><strong>Motor:</strong> @carro.Motorizacao</p>
+                <p><strong>Potência:</strong> @carro.Potencia</p>
+                <p><strong>Torque:</strong> @carro.Torque</p>
+                <p><strong>Câmbio:</strong> @carro.Cambio</p>
+                <p><strong>Popularidade:</strong> @carro.Popularidade/100</p>
+                <p>@carro.Descricao</p>
+            </div>
+        </div>
+    </div>
+}
+<script>
+    document.querySelectorAll('.flip-card').forEach(card => {
+        card.addEventListener('click', () => {
+            card.classList.toggle('flipped');
+        });
+    });
+</script>
+</div>

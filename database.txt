@@ -1,0 +1,51 @@
+CREATE DATABASE if not exists volksdex;
+USE volksdex;
+
+CREATE TABLE carros (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nomeModelo VARCHAR(100) NOT NULL,
+    anoLancamento INT NOT NULL,
+    anoDescontinuado INT,
+    tipo VARCHAR(50) NOT NULL,
+    motorizacao VARCHAR(50) NOT NULL,
+    potencia VARCHAR(20),
+    torque VARCHAR(20),
+    cambio ENUM('manual', 'automático', 'manual ou automático') NOT NULL,
+    popularidade INT CHECK (popularidade BETWEEN 0 AND 100),
+    descricao TEXT,
+    imagemUrl VARCHAR(255)
+);
+
+INSERT INTO carros (nomeModelo, anoLancamento, anoDescontinuado, tipo, motorizacao, potencia, torque, cambio, popularidade, descricao, imagemUrl) VALUES
+('Fusca', 1938, 2003, 'Hatch', '1.3 Boxer', '46 cv', '9,5 kgfm', 'manual', 95, 'Ícone mundial da VW, conhecido como "besouro".', 'fusca.jpg'),
+('Gol G1', 1980, 1994, 'Hatch', '1.6 CHT', '73 cv', '12,3 kgfm', 'manual', 90, 'Primeira geração do Gol, carro mais vendido do Brasil por décadas.', 'gol_g1.jpg'),
+('Gol GTI', 1989, 1994, 'Hatch', '2.0 EFI', '120 cv', '18,5 kgfm', 'manual', 88, 'Primeiro carro nacional com injeção eletrônica.', 'gol_gti.jpg'),
+('Voyage', 1981, NULL, 'Sedan', '1.6 MSI', '104 cv', '15,6 kgfm', 'manual ou automático', 80, 'Versão sedan do Gol, ainda em produção.', 'voyage.jpg'),
+('Parati', 1982, 2012, 'Perua', '1.8 AP', '99 cv', '15,4 kgfm', 'manual', 78, 'Perua compacta derivada do Gol, muito usada por famílias.', 'parati.jpg'),
+('Saveiro', 1982, NULL, 'Pickup', '1.6 MSI', '104 cv', '15,6 kgfm', 'manual', 82, 'Pickup leve derivada do Gol, popular entre pequenos negócios.', 'saveiro.jpg'),
+('Santana', 1984, 2006, 'Sedan', '2.0 AP', '112 cv', '17,3 kgfm', 'manual', 75, 'Sedan médio com pegada executiva nos anos 80 e 90.', 'santana.jpg'),
+('Quantum', 1985, 2002, 'Perua', '2.0 AP', '112 cv', '17,3 kgfm', 'manual', 70, 'Perua espaçosa baseada no Santana.', 'quantum.jpg'),
+('Passat TS', 1976, 1983, 'Sedan', '1.6', '80 cv', '12,5 kgfm', 'manual', 73, 'Versão esportiva do Passat com faixas laterais icônicas.', 'passat_ts.jpg'),
+('Passat B5', 1997, 2005, 'Sedan', '1.8 Turbo', '150 cv', '21,0 kgfm', 'automático', 77, 'Sedan médio com motor turbo e acabamento refinado.', 'passat_b5.jpg'),
+('Passat CC', 2008, 2016, 'Sedan', '2.0 TSI', '211 cv', '28,6 kgfm', 'automático', 85, 'Versão cupê do Passat com design esportivo.', 'passat_cc.jpg'),
+('Jetta TSI', 2011, NULL, 'Sedan', '2.0 TSI', '211 cv', '28,6 kgfm', 'automático', 87, 'Sedan esportivo com motor turbo e câmbio DSG.', 'jetta_tsi.jpg'),
+('Jetta GLI', 2019, NULL, 'Sedan', '2.0 TSI', '230 cv', '35,7 kgfm', 'automático', 90, 'Versão esportiva do Jetta com visual agressivo.', 'jetta_gli.jpg'),
+('Virtus', 2018, NULL, 'Sedan', '1.0 TSI', '128 cv', '20,4 kgfm', 'automático', 83, 'Sedan compacto com motor turbo e bom espaço interno.', 'virtus.jpg'),
+('Polo GTS', 2020, NULL, 'Hatch', '1.4 TSI', '150 cv', '25,5 kgfm', 'automático', 86, 'Versão esportiva do Polo com visual exclusivo.', 'polo_gts.jpg'),
+('Polo Track', 2023, NULL, 'Hatch', '1.0 MPI', '84 cv', '10,3 kgfm', 'manual', 72, 'Versão de entrada do Polo com foco em custo-benefício.', 'polo_track.jpg'),
+('Nivus', 2020, NULL, 'SUV', '1.0 TSI', '128 cv', '20,4 kgfm', 'automático', 84, 'SUV cupê compacto com estilo moderno.', 'nivus.jpg'),
+('T-Cross', 2019, NULL, 'SUV', '1.0 TSI', '128 cv', '20,4 kgfm', 'automático', 85, 'SUV urbano com bom espaço e conectividade.', 't_cross.jpg'),
+('Taos', 2021, NULL, 'SUV', '1.4 TSI', '150 cv', '25,5 kgfm', 'automático', 82, 'SUV médio com motor turbo e bom acabamento.', 'taos.jpg'),
+('Tiguan Allspace', 2018, NULL, 'SUV', '2.0 TSI', '220 cv', '35,7 kgfm', 'automático', 88, 'SUV de 7 lugares com desempenho esportivo.', 'tiguan.jpg'),
+('Amarok V6', 2017, NULL, 'Pickup', '3.0 V6 TDI', '258 cv', '59,1 kgfm', 'automático', 91, 'Pickup média com motor V6 diesel e tração 4x4.', 'amarok_v6.jpg'),
+('Kombi', 1950, 2013, 'Van', '1.4 Flex', '78 cv', '12,5 kgfm', 'manual', 92, 'Clássica van da VW, símbolo de liberdade e trabalho.', 'kombi.jpg'),
+('ID.4', 2021, NULL, 'SUV', 'Elétrico', '204 cv', '31,6 kgfm', 'automático', 89, 'SUV elétrico global da Volkswagen.', 'id4.jpg'),
+('ID.Buzz', 2022, NULL, 'Van', 'Elétrico', '204 cv', '31,6 kgfm', 'automático', 90, 'Releitura elétrica da Kombi com design retrô.', 'id_buzz.jpg'),
+('XL1', 2013, 2015, 'Coupé', 'Híbrido Diesel', '48 cv', '12,7 kgfm', 'automático', 65, 'Carro experimental com foco em eficiência extrema.', 'xl1.jpg'),
+('SP2', 1972, 1976, 'Coupé', '1.7 Boxer', '75 cv', '11,5 kgfm', 'manual', 78, 'Esportivo brasileiro com design único e motor traseiro.', 'sp2.jpg'),
+('Brasília', 1973, 1982, 'Hatch', '1.6 Boxer', '65 cv', '11,5 kgfm', 'manual', 80, 'Compacto nacional com motor traseiro e estilo próprio.', 'brasilia.jpg'),
+('Pointer GTI', 1994, 1996, 'Hatch', '2.0', '109 cv', '17,3 kgfm', 'manual', 74, 'Modelo esportivo da Autolatina com bom desempenho.', 'pointer_gti.jpg'),
+('Logus', 1993, 1997, 'Sedan', '1.8', '99 cv', '15,4 kgfm', 'manual', 70, 'Sedan da parceria VW-Ford com bom acabamento.', 'logus.jpg'),
+('Golf GTI', 1995, NULL, 'Hatch', '2.0 TSI', '220 cv', '35,7 kgfm', 'automático', 92, 'Hatch esportivo com tradição mundial.', 'golf_gti.jpg');
+
+
