@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mv\\Downloads\\volksdex\\volksdex\\volksdex.csproj": {}
+    "C:\\Users\\User\\Desktop\\Nova pasta\\VOLKSDEX-II\\volksdex.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mv\\Downloads\\volksdex\\volksdex\\volksdex.csproj": {
+    "C:\\Users\\User\\Desktop\\Nova pasta\\VOLKSDEX-II\\volksdex.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mv\\Downloads\\volksdex\\volksdex\\volksdex.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\Nova pasta\\VOLKSDEX-II\\volksdex.csproj",
         "projectName": "volksdex",
-        "projectPath": "C:\\Users\\Mv\\Downloads\\volksdex\\volksdex\\volksdex.csproj",
-        "packagesPath": "C:\\Users\\Mv\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mv\\Downloads\\volksdex\\volksdex\\obj\\",
+        "projectPath": "C:\\Users\\User\\Desktop\\Nova pasta\\VOLKSDEX-II\\volksdex.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\Nova pasta\\VOLKSDEX-II\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Mv\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -37,7 +37,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -59,6 +60,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.19, 8.0.19]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[8.0.19, 8.0.19]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.19, 8.0.19]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.19, 8.0.19]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -67,7 +86,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.415/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
