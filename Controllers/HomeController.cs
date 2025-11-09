@@ -1,37 +1,72 @@
-using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using volksdex.Data;
-using volksdex.Models;
+using Microsoft.EntityFrameworkCore;
 using System.Linq;
+using Volksdex_II.Data;
+using Volksdex_II.Models;
 
-namespace volksdex.Controllers
+namespace Volksdex_II.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
         private readonly VolksdexContext _context;
 
-        public HomeController(ILogger<HomeController> logger, VolksdexContext context)
+        public HomeController(VolksdexContext context)
         {
-            _logger = logger;
             _context = context;
         }
 
-        public IActionResult Index()
+        // Converte "XX cv" em inteiro para ordenar
+        private int ConvertPotenciaToInt(string potencia)
         {
-            var carros = _context.Carros.ToList();
-            return View(carros);
+            if (string.IsNullOrEmpty(potencia)) return 0;
+            var partes = potencia.Split(' ');
+            if (int.TryParse(partes[0], out int valor))
+                return valor;
+            return 0;
         }
 
-        public IActionResult Privacy()
+        // GET: /Home/Index
+        public IActionResult Index(string filtro)
         {
-            return View();
-        }
+            var carros = _context.Carros.AsQueryable();
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            // Filtra por nome do modelo
+            if (!string.IsNullOrEmpty(filtro) && filtro != "anoAsc" && filtro != "anoDesc" &&
+                filtro != "potenciaAsc" && filtro != "potenciaDesc" && filtro != "nome")
+            {
+                carros = carros.Where(c => c.NomeModelo.Contains(filtro));
+            }
+
+            // Ordena conforme o filtro
+            switch (filtro)
+            {
+                case "anoAsc":
+                    carros = carros.OrderBy(c => c.AnoLancamento);
+                    break;
+                case "anoDesc":
+                    carros = carros.OrderByDescending(c => c.AnoLancamento);
+                    break;
+                case "potenciaAsc":
+                    carros = carros
+                        .AsEnumerable() // traz os dados para memória para usar o método ConvertPotenciaToInt
+                        .OrderBy(c => ConvertPotenciaToInt(c.Potencia))
+                        .AsQueryable();
+                    break;
+                case "potenciaDesc":
+                    carros = carros
+                        .AsEnumerable()
+                        .OrderByDescending(c => ConvertPotenciaToInt(c.Potencia))
+                        .AsQueryable();
+                    break;
+                case "nome":
+                    carros = carros.OrderBy(c => c.NomeModelo);
+                    break;
+                default:
+                    carros = carros.OrderBy(c => c.NomeModelo);
+                    break;
+            }
+
+            return View(carros.ToList());
         }
     }
 }

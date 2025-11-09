@@ -1,67 +1,179 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Mv\\Downloads\\volksdex\\volksdex\\wwwroot\\css\\home.css",
+      "Id": "C:\\Users\\Mv\\Desktop\\VOLKSDEX-II\\wwwroot\\css\\home.css",
       "PackagePath": "staticwebassets\\css\\home.css"
     },
     {
-      "Id": "C:\\Users\\Mv\\Downloads\\volksdex\\volksdex\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\Mv\\Desktop\\VOLKSDEX-II\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\Mv\\Downloads\\volksdex\\volksdex\\wwwroot\\images\\fusca.jpg",
+      "Id": "C:\\Users\\Mv\\Desktop\\VOLKSDEX-II\\wwwroot\\images\\amarok_v6.jpg",
+      "PackagePath": "staticwebassets\\images\\amarok_v6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mv\\Desktop\\VOLKSDEX-II\\wwwroot\\images\\brasilia.jpg",
+      "PackagePath": "staticwebassets\\images\\brasilia.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mv\\Desktop\\VOLKSDEX-II\\wwwroot\\images\\fusca.jpg",
       "PackagePath": "staticwebassets\\images\\fusca.jpg"
     },
     {
-      "Id": "C:\\Users\\Mv\\Downloads\\volksdex\\volksdex\\wwwroot\\images\\gol.jpg",
-      "PackagePath": "staticwebassets\\images\\gol.jpg"
+      "Id": "C:\\Users\\Mv\\Desktop\\VOLKSDEX-II\\wwwroot\\images\\gol_g1.jpg",
+      "PackagePath": "staticwebassets\\images\\gol_g1.jpg"
     },
     {
-      "Id": "C:\\Users\\Mv\\Downloads\\volksdex\\volksdex\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\Mv\\Desktop\\VOLKSDEX-II\\wwwroot\\images\\gol_gti.jpg",
+      "PackagePath": "staticwebassets\\images\\gol_gti.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mv\\Desktop\\VOLKSDEX-II\\wwwroot\\images\\golf_gti.jpg",
+      "PackagePath": "staticwebassets\\images\\golf_gti.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mv\\Desktop\\VOLKSDEX-II\\wwwroot\\images\\id4.jpg",
+      "PackagePath": "staticwebassets\\images\\id4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mv\\Desktop\\VOLKSDEX-II\\wwwroot\\images\\id_buzz.jpg",
+      "PackagePath": "staticwebassets\\images\\id_buzz.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mv\\Desktop\\VOLKSDEX-II\\wwwroot\\images\\jetta_gli.jpg",
+      "PackagePath": "staticwebassets\\images\\jetta_gli.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mv\\Desktop\\VOLKSDEX-II\\wwwroot\\images\\jetta_tsi.jpg",
+      "PackagePath": "staticwebassets\\images\\jetta_tsi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mv\\Desktop\\VOLKSDEX-II\\wwwroot\\images\\kombi.jpg",
+      "PackagePath": "staticwebassets\\images\\kombi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mv\\Desktop\\VOLKSDEX-II\\wwwroot\\images\\logus.jpg",
+      "PackagePath": "staticwebassets\\images\\logus.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mv\\Desktop\\VOLKSDEX-II\\wwwroot\\images\\nivus.jpg",
+      "PackagePath": "staticwebassets\\images\\nivus.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mv\\Desktop\\VOLKSDEX-II\\wwwroot\\images\\parati.jpg",
+      "PackagePath": "staticwebassets\\images\\parati.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mv\\Desktop\\VOLKSDEX-II\\wwwroot\\images\\passat_b5.jpg",
+      "PackagePath": "staticwebassets\\images\\passat_b5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mv\\Desktop\\VOLKSDEX-II\\wwwroot\\images\\passat_cc.jpg",
+      "PackagePath": "staticwebassets\\images\\passat_cc.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mv\\Desktop\\VOLKSDEX-II\\wwwroot\\images\\passat_ts.jpg",
+      "PackagePath": "staticwebassets\\images\\passat_ts.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mv\\Desktop\\VOLKSDEX-II\\wwwroot\\images\\pointer_gti.jpg",
+      "PackagePath": "staticwebassets\\images\\pointer_gti.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mv\\Desktop\\VOLKSDEX-II\\wwwroot\\images\\polo_gts.jpg",
+      "PackagePath": "staticwebassets\\images\\polo_gts.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mv\\Desktop\\VOLKSDEX-II\\wwwroot\\images\\polo_track.jpg",
+      "PackagePath": "staticwebassets\\images\\polo_track.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mv\\Desktop\\VOLKSDEX-II\\wwwroot\\images\\quantum.jpg",
+      "PackagePath": "staticwebassets\\images\\quantum.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mv\\Desktop\\VOLKSDEX-II\\wwwroot\\images\\santana.jpg",
+      "PackagePath": "staticwebassets\\images\\santana.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mv\\Desktop\\VOLKSDEX-II\\wwwroot\\images\\saveiro.jpg",
+      "PackagePath": "staticwebassets\\images\\saveiro.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mv\\Desktop\\VOLKSDEX-II\\wwwroot\\images\\sp2.jpg",
+      "PackagePath": "staticwebassets\\images\\sp2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mv\\Desktop\\VOLKSDEX-II\\wwwroot\\images\\t_cross.jpg",
+      "PackagePath": "staticwebassets\\images\\t_cross.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mv\\Desktop\\VOLKSDEX-II\\wwwroot\\images\\taos.jpg",
+      "PackagePath": "staticwebassets\\images\\taos.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mv\\Desktop\\VOLKSDEX-II\\wwwroot\\images\\tiguan.jpg",
+      "PackagePath": "staticwebassets\\images\\tiguan.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mv\\Desktop\\VOLKSDEX-II\\wwwroot\\images\\virtus.jpg",
+      "PackagePath": "staticwebassets\\images\\virtus.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mv\\Desktop\\VOLKSDEX-II\\wwwroot\\images\\voyage.jpg",
+      "PackagePath": "staticwebassets\\images\\voyage.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mv\\Desktop\\VOLKSDEX-II\\wwwroot\\images\\xl1.jpg",
+      "PackagePath": "staticwebassets\\images\\xl1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mv\\Desktop\\VOLKSDEX-II\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\Mv\\Downloads\\volksdex\\volksdex\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\Mv\\Desktop\\VOLKSDEX-II\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\Mv\\Downloads\\volksdex\\volksdex\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\Mv\\Desktop\\VOLKSDEX-II\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\Mv\\Downloads\\volksdex\\volksdex\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\Mv\\Desktop\\VOLKSDEX-II\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\Mv\\Downloads\\volksdex\\volksdex\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\Mv\\Desktop\\VOLKSDEX-II\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\Mv\\Downloads\\volksdex\\volksdex\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\Mv\\Desktop\\VOLKSDEX-II\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\Mv\\Downloads\\volksdex\\volksdex\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\Mv\\Desktop\\VOLKSDEX-II\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\Mv\\Downloads\\volksdex\\volksdex\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\Mv\\Desktop\\VOLKSDEX-II\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\Mv\\Downloads\\volksdex\\volksdex\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\Mv\\Desktop\\VOLKSDEX-II\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\Mv\\Downloads\\volksdex\\volksdex\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\Mv\\Desktop\\VOLKSDEX-II\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\Mv\\Downloads\\volksdex\\volksdex\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\Mv\\Desktop\\VOLKSDEX-II\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\Mv\\Downloads\\volksdex\\volksdex\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\Mv\\Desktop\\VOLKSDEX-II\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

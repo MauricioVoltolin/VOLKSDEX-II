@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("volksdex")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b46165fb60aaee4fa998d314f7da6c3b56a46d49")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5ae4afdea089fad82781c1548d1d9e940c9f81bd")]
 [assembly: System.Reflection.AssemblyProductAttribute("volksdex")]
 [assembly: System.Reflection.AssemblyTitleAttribute("volksdex")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
